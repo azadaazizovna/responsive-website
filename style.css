@@ -1,0 +1,560 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url('https://cdn.rit.edu/images/news/2020-03/New_Dubai_Campus_1.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+.header nav p {
+    font-size: 20px;
+    color: rgb(126, 79, 79);
+    position: relative;
+}
+nav span {
+    font-size: 40px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px;
+    position: relative;
+}
+.nav-links ul li a {
+    color: azure;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    color:rgb(126, 79, 79);
+}
+.text-box {
+    position: relative;
+    width: 90%;
+    color:aliceblue;
+    margin-top: 80px;
+    margin-left: 50px;
+}
+.text-box h1 {
+    font-weight: 500;
+    font-size: 45px;
+    padding: 15px;
+    position: relative;
+}
+.text-box p {
+    width: 60%;
+    padding: 15px;
+    position: relative;
+}  
+ .hero-btn {
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    margin-left: 15px;
+    display: inline-block;
+    border: 1px solid #fff;
+    font-size: 13px;
+    background: transparent;
+    margin-top: 20px;
+    position: relative;
+}
+.hero-btn:hover {
+    border: 1px solid rgb(126, 79, 79);
+    color:rgb(126, 79, 79);
+ }
+nav .fa {
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
+    nav ul li a {
+        font-size: 14px;
+    }
+    .header nav p {
+        font-size: 15px;
+    
+     }
+     .header nav span {
+         font-size: 30px;
+     }
+}
+ @media screen and (max-width: 768px) {
+     .header nav p {
+        font-size: 16px;
+        width: 50%;
+     }
+     .header nav span {
+         font-size: 27px;
+     }
+    .text-box h1 {
+      font-size: 23px;
+  } 
+  .nav-links ul li {
+      display: block;
+      text-align: center;
+  }
+  .nav-links ul li a {
+      color: rgb(126, 79, 79);
+  }
+  .nav-links {
+      position: absolute;
+      background-color: #fff;
+      height: 100vh;
+      width: 150px;
+      top: 0;
+      right: -200px;
+      text-align: left;
+      z-index: 3;
+      transition: 0.5s;
+  }
+   nav .fa{
+       display: block;
+       color:rgb(126, 79, 79);
+       margin: 10px;
+       font-size: 22px;
+       cursor: pointer;
+   }
+   .nav-links ul{
+   padding: 30px;
+   }
+   
+ }
+
+ .course {
+     width: 80%;
+     margin: auto;
+     text-align: center;
+     padding-top: 100px;
+     }
+
+.course h1 {
+    font-size: 36px;
+    font-weight: 600;
+}
+.course p {
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+ .row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+} 
+.course-col {
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.course-col h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.course-col:hover {
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+@media screen and (max-width: 920px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+.campus {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+
+}
+.campus-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.campus-col img {
+    width: 100%;
+    display: block;
+}
+.layer {
+    background: transparent;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover {
+  background: rgba(110, 0,0,0.7);
+}
+.layer h3 {
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer:hover h3 {
+    bottom: 49%;
+    opacity: 1;
+}
+.facilities {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.facilities-col {
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+.facilities-col img {
+    width: 100%;
+    border-radius: 10px;
+}
+.facilities-col p {
+    padding: 0;
+
+}
+.facilities-col h3 {
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+.cta {
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('https://az589735.vo.msecnd.net/images/profilepics/1024038/10.jpg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+.cta h1 {
+ color: #fff;
+ margin-bottom: 40px;
+ padding: 0;
+}
+@media screen and (max-width: 700px) {
+    .cta h1 {
+        font-size: 20px;
+     }
+}
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+.footer h4 {
+    margin-bottom: 25px;
+    margin-top: 10px;
+    font-weight: 600;
+}
+.footer p {
+    color: #777;
+    
+}
+.icons .fa {
+  color: #333;
+  margin: 0 13px;
+  cursor: pointer;
+  padding: 18px 0;
+}
+
+
+  
+  .form-container {
+    display: none;
+    width: 550px;
+    background-color: white;
+    margin: auto;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    padding: 10px;
+    position: relative;
+    bottom: 250px;
+    z-index: 100;
+  }
+  
+  .register-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 10px;
+  }
+  
+  .success-message {
+    display: none;
+    font-family: "Roboto", sans-serif;
+    background-color: #3f89f8;
+    padding: 15px;
+    color: white;
+  }
+  
+  .form-field {
+      
+    margin: 20px 0 20px 0;
+    padding: 15px;
+    font-size: 16px;
+    border: 0;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .form-container .fa-times {
+      float: right;
+      margin: 10px;
+  }
+  input {
+    background: #f2f2f2;
+  }
+  
+  
+  
+  button {
+    background: #777;
+    color: white;
+    cursor: pointer;
+  }
+  
+  button:disabled {
+    cursor: default;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
